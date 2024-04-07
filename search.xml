@@ -4,25 +4,6 @@
   
     
     <entry>
-      <title>摄动法</title>
-      <link href="/2024/04/07/%E6%91%84%E5%8A%A8%E6%B3%95/"/>
-      <url>/2024/04/07/%E6%91%84%E5%8A%A8%E6%B3%95/</url>
-      
-        <content type="html"><![CDATA[<h1 id="摄动法"><a href="#摄动法" class="headerlink" title="摄动法"></a>摄动法</h1><p>概述：对于任意$n$阶矩阵$A$，经过微小的一维摄动后，$tI_n+A$总能成为一个非异阵。</p><p>命题：对于任意$n$阶矩阵$A$。求证：存在一个正数$a$，使得任意$0&lt;t&lt;a,tI_n+A$都是非异阵。</p><p>证明：$\vert tI_n+A\vert &#x3D; t^n+a_1t^{n-1}+\cdots +a_{n-1}t+a_n,$上述多项式至多只有$n$个不同根，若根都为$0$不妨取$a&#x3D;1$；</p><p>若上述多项式有非零根，令$a$为其所有非零根的模长的最小值,此时任意$0&lt;t_0&lt;a$，$t_0$ 都不是$\vert tI_n+A\vert$ 的根，即$\vert t_0I_n+A\vert \ne 0$ ,即$\vert t_0I_n+A\vert$ 为非异阵。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> math </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>test</title>
       <link href="/2024/04/07/test/"/>
       <url>/2024/04/07/test/</url>
@@ -30,6 +11,25 @@
         <content type="html"><![CDATA[<p>hello</p><div class="highlight-wrap" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br></pre></td></tr></table></figure></div><p><img src="/2024/04/07/test/1.png"></p>]]></content>
       
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>摄动法</title>
+      <link href="/2024/04/07/%E6%91%84%E5%8A%A8%E6%B3%95/"/>
+      <url>/2024/04/07/%E6%91%84%E5%8A%A8%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="摄动法"><a href="#摄动法" class="headerlink" title="摄动法"></a>摄动法</h1><p>概述：对于任意$n$阶矩阵$A$，经过微小的一维摄动后，$tI_n+A$总能成为一个非异阵。</p><p>命题：对于任意$n$阶矩阵$A$。求证：存在一个正数$a$，使得任意$0&lt;t&lt;a,tI_n+A$都是非异阵。</p><p>证明：$\vert tI_n+A\vert &#x3D; t^n+a_1t^{n-1}+\cdots +a_{n-1}t+a_n,$上述多项式至多只有$n$个不同根，若根都为$0$不妨取$a&#x3D;1$；</p><p>若上述多项式有非零根，令$a$为其所有非零根的模长的最小值,此时任意$0&lt;t_0&lt;a$，$t_0$ 都不是$\vert tI_n+A\vert$ 的根，即$\vert t_0I_n+A\vert \ne 0$ ,即$\vert t_0I_n+A\vert$ 为非异阵。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> math </tag>
+            
+        </tags>
       
     </entry>
     
