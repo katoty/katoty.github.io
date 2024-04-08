@@ -487,7 +487,7 @@ body {
   color: #c9cacc;
   font-weight: 400;
   font-size: 14px;
-  font-family: "JetBrainsMono", "Menlo", "Meslo LG", monospace;
+  font-family: "Menlo", "Meslo LG", monospace;
   line-height: 1.725;
   text-rendering: geometricPrecision;
   -moz-osx-font-smoothing: grayscale;
@@ -1421,7 +1421,7 @@ article .content .caption {
   font-display: swap;
   font-weight: 400;
   font-size: 11.200000000000001px;
-  font-family: "JetBrainsMono", "Menlo", "Meslo LG", monospace;
+  font-family: "Menlo", "Meslo LG", monospace;
   line-height: 1.725;
   text-rendering: geometricPrecision;
   text-align: center;
@@ -1648,7 +1648,7 @@ pre {
   border: 1px dotted #908d8d;
   border-radius: 4px;
   font-size: 13px;
-  font-family: "JetBrainsMono", "Menlo", "Meslo LG", monospace;
+  font-family: "Menlo", "Meslo LG", monospace;
   line-height: 22px;
   -webkit-border-radius: 4px;
 }
@@ -1667,7 +1667,7 @@ code {
   overflow-x: auto;
   margin: 2rem 0 0 0;
   padding: 10px 15px;
-  font-family: "JetBrainsMono", "Menlo", "Meslo LG", monospace;
+  font-family: "Menlo", "Meslo LG", monospace;
   -webkit-border-radius: 4px;
 }
 .highlight figcaption {
