@@ -8,7 +8,7 @@
       <link href="/2024/05/14/%E6%8E%A8%E5%AF%BC/"/>
       <url>/2024/05/14/%E6%8E%A8%E5%AF%BC/</url>
       
-        <content type="html"><![CDATA[<p>阿贝尔变换：</p><p>$$\begin{aligned}<br>\sum_{k&#x3D;1}^na_kb_k&amp; &#x3D;a_1b_1+\sum_{k&#x3D;2}^na_kb_k \<br>&amp;&#x3D;a_1B_1+\sum_{k&#x3D;2}^na_k(B_k-B_{k-1}) \<br>&amp;&#x3D;a_1B_1+\sum_{k&#x3D;2}^na_kB_k-\sum_{k&#x3D;2}^na_kB_{k-1} \<br>&amp;&#x3D;\sum_{k&#x3D;1}^{n-1}a_kB_k+a_nB_n-\sum_{k&#x3D;1}^{n-1}a_{k+1}B_k \<br>&amp;&#x3D;\sum_{k&#x3D;1}^{n-1}\left(a_k-a_{k+1}\right)B_k+a_nB_n<br>\end{aligned}$$ </p>]]></content>
+        <content type="html"><![CDATA[<p>阿贝尔变换：</p><p>$$\begin{align}<br>\sum_{k&#x3D;1}^na_kb_k&amp; &#x3D;a_1b_1+\sum_{k&#x3D;2}^na_kb_k \<br>&amp;&#x3D;a_1B_1+\sum_{k&#x3D;2}^na_k(B_k-B_{k-1}) \<br>&amp;&#x3D;a_1B_1+\sum_{k&#x3D;2}^na_kB_k-\sum_{k&#x3D;2}^na_kB_{k-1} \<br>&amp;&#x3D;\sum_{k&#x3D;1}^{n-1}a_kB_k+a_nB_n-\sum_{k&#x3D;1}^{n-1}a_{k+1}B_k \<br>&amp;&#x3D;\sum_{k&#x3D;1}^{n-1}\left(a_k-a_{k+1}\right)B_k+a_nB_n<br>\end{align}$$ </p>]]></content>
       
       
       
