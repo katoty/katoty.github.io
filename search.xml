@@ -5,16 +5,16 @@
     
     <entry>
       <title>Assignment</title>
-      <link href="/2024/06/03/CNN/"/>
-      <url>/2024/06/03/CNN/</url>
+      <link href="/2024/06/03/Assignment/"/>
+      <url>/2024/06/03/Assignment/</url>
       
-        <content type="html"><![CDATA[<p><a href="../pdfs/CNN.pdf">CNN</a></p><p><a href="../pdfs/Bayes.pdf">Bayes</a></p><p><a href="../pdf/SVM.pdf">SVM</a></p>]]></content>
+        <content type="html"><![CDATA[<p><a href="https://katoty.github.io/pdfs/CNN.pdf">CNN</a></p><p><a href="https://katoty.github.io/pdfs/Bayes.pdf">Bayes</a></p><p><a href="https://katoty.github.io/pdfs/SVM.pdf">SVM</a></p>]]></content>
       
       
       
         <tags>
             
-            <tag> machine learning </tag>
+            <tag> Machine Learning </tag>
             
         </tags>
       
@@ -23,51 +23,19 @@
     
     
     <entry>
-      <title>推导</title>
-      <link href="/2024/05/14/%E6%8E%A8%E5%AF%BC/"/>
-      <url>/2024/05/14/%E6%8E%A8%E5%AF%BC/</url>
+      <title>Notes</title>
+      <link href="/2024/05/14/Notes/"/>
+      <url>/2024/05/14/Notes/</url>
       
-        <content type="html"><![CDATA[<p>阿贝尔变换：</p><script type="math/tex; mode=display">\begin{aligned}\sum_{k=1}^n a_k b_k &= a_1 b_1 + \sum_{k=2}^n a_k b_k \\&= a_1 B_1 + \sum_{k=2}^n a_k (B_k - B_{k-1}) \\&= a_1 B_1 + \sum_{k=2}^n a_k B_k - \sum_{k=2}^n a_k B_{k-1} \\&= \sum_{k=1}^{n-1} a_k B_k + a_n B_n - \sum_{k=1}^{n-1} a_{k+1} B_k \\&= \sum_{k=1}^{n-1} (a_k - a_{k+1}) B_k + a_n B_n\end{aligned}</script>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> math </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>题目</title>
-      <link href="/2024/05/13/%E9%A2%98/"/>
-      <url>/2024/05/13/%E9%A2%98/</url>
-      
-        <content type="html"><![CDATA[<p><img src="1.png" alt=""></p>]]></content>
+        <content type="html"><![CDATA[<p>Abel’s lemma：</p><script type="math/tex; mode=display">\begin{aligned}\sum_{k=1}^n a_k b_k &= a_1 b_1 + \sum_{k=2}^n a_k b_k \\&= a_1 B_1 + \sum_{k=2}^n a_k (B_k - B_{k-1}) \\&= a_1 B_1 + \sum_{k=2}^n a_k B_k - \sum_{k=2}^n a_k B_{k-1} \\&= \sum_{k=1}^{n-1} a_k B_k + a_n B_n - \sum_{k=1}^{n-1} a_{k+1} B_k \\&= \sum_{k=1}^{n-1} (a_k - a_{k+1}) B_k + a_n B_n\end{aligned}</script>]]></content>
       
       
       
         <tags>
             
-            <tag> math </tag>
+            <tag> Math </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>test</title>
-      <link href="/2024/04/07/test/"/>
-      <url>/2024/04/07/test/</url>
-      
-        <content type="html"><![CDATA[<p>hello</p><div class="highlight-wrap" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br></pre></td></tr></table></figure></div><p><img src="1.png" alt=""></p>]]></content>
-      
-      
       
     </entry>
     
@@ -84,7 +52,7 @@
       
         <tags>
             
-            <tag> math </tag>
+            <tag> Math </tag>
             
         </tags>
       
