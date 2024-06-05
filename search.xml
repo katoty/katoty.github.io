@@ -27,7 +27,7 @@
       <link href="/2024/05/14/Notes/"/>
       <url>/2024/05/14/Notes/</url>
       
-        <content type="html"><![CDATA[<p>Abel’s lemma：</p><p>$$<br>\begin{aligned}<br>\sum_{k&#x3D;1}^n a_k b_k &amp;&#x3D; a_1 b_1 + \sum_{k&#x3D;2}^n a_k b_k \<br>&amp;&#x3D; a_1 B_1 + \sum_{k&#x3D;2}^n a_k (B_k - B_{k-1}) \<br>&amp;&#x3D; a_1 B_1 + \sum_{k&#x3D;2}^n a_k B_k - \sum_{k&#x3D;2}^n a_k B_{k-1} \<br>&amp;&#x3D; \sum_{k&#x3D;1}^{n-1} a_k B_k + a_n B_n - \sum_{k&#x3D;1}^{n-1} a_{k+1} B_k \<br>&amp;&#x3D; \sum_{k&#x3D;1}^{n-1} (a_k - a_{k+1}) B_k + a_n B_n<br>\end{aligned}<br>$$</p>]]></content>
+        <content type="html"><![CDATA[<p>Abel’s lemma</p><script type="math/tex; mode=display">\begin{aligned}\sum_{k=1}^n a_k b_k &= a_1 b_1 + \sum_{k=2}^n a_k b_k \\&= a_1 B_1 + \sum_{k=2}^n a_k (B_k - B_{k-1}) \\&= a_1 B_1 + \sum_{k=2}^n a_k B_k - \sum_{k=2}^n a_k B_{k-1} \\&= \sum_{k=1}^{n-1} a_k B_k + a_n B_n - \sum_{k=1}^{n-1} a_{k+1} B_k \\&= \sum_{k=1}^{n-1} (a_k - a_{k+1}) B_k + a_n B_n\end{aligned}</script>]]></content>
       
       
       
@@ -46,7 +46,7 @@
       <link href="/2024/04/07/%E6%91%84%E5%8A%A8%E6%B3%95/"/>
       <url>/2024/04/07/%E6%91%84%E5%8A%A8%E6%B3%95/</url>
       
-        <content type="html"><![CDATA[<h1 id="摄动法"><a href="#摄动法" class="headerlink" title="摄动法"></a>摄动法</h1><p>概述：对于任意$n$阶矩阵$A$，经过微小的一维摄动后，$tI_n+A$总能成为一个非异阵。</p><p>命题：对于任意$n$阶矩阵$A$。求证：存在一个正数$a$，使得任意$0&lt;t&lt;a,tI_n+A$都是非异阵。</p><p>证明：$\vert tI_n+A\vert &#x3D; t^n+a_1t^{n-1}+\cdots +a_{n-1}t+a_n,$上述多项式至多只有$n$个不同根，若根都为$0$不妨取$a&#x3D;1$；</p><p>若上述多项式有非零根，令$a$为其所有非零根的模长的最小值,此时任意$0&lt;t_0&lt;a$，$t_0$ 都不是$\vert tI_n+A\vert$ 的根，即$\vert t_0I_n+A\vert \ne 0$ ,即$\vert t_0I_n+A\vert$ 为非异阵。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="摄动法"><a href="#摄动法" class="headerlink" title="摄动法"></a>摄动法</h1><p>概述：对于任意 $n$ 阶矩阵 $A$ ，经过微小的一维摄动后，$tI_n+A$总能成为一个非异阵。</p><p>命题：对于任意$n$阶矩阵$A$。求证：存在一个正数$a$，使得任意$0&lt;t&lt;a,tI_n+A$都是非异阵。</p><p>证明：$\vert tI_n+A\vert = t^n+a_1t^{n-1}+\cdots +a_{n-1}t+a_n,$上述多项式至多只有$n$个不同根，若根都为$0$不妨取$a=1$；</p><p>若上述多项式有非零根，令$a$为其所有非零根的模长的最小值,此时任意$0&lt;t_0&lt;a$，$t_0$ 都不是$\vert tI_n+A\vert$ 的根，即$\vert t_0I_n+A\vert \ne 0$ ,即 <script type="math/tex">\vert t_0I_n+A\vert</script> 为非异阵。</p>]]></content>
       
       
       

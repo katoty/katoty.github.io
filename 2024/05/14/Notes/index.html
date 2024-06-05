@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="Abel’s lemma： $$\begin{aligned}\sum_{k&#x3D;1}^n a_k b_k &amp;&#x3D; a_1 b_1 + \sum_{k&#x3D;2}^n a_k b_k \&amp;&#x3D; a_1 B_1 + \sum_{k&#x3D;2}^n a_k (B_k - B_{k-1}) \&amp;&#x3D; a_1 B_1 + \sum_{k&amp;#x3">
+    <meta name="description" content="Abel’s lemma  \begin{aligned} \sum_{k&#x3D;1}^n a_k b_k &amp;&#x3D; a_1 b_1 + \sum_{k&#x3D;2}^n a_k b_k \\ &amp;&#x3D; a_1 B_1 + \sum_{k&#x3D;2}^n a_k (B_k - B_{k-1}) \\ &amp;&#x3D; a_1 B_1 + \sum_{k&#x3D;2}^n a_k B_k - \sum_{k&#x3D;2}^n a_k B_{k-1} \\">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Notes">
 <meta property="og:url" content="https://katoty.github.io/2024/05/14/Notes/index.html">
 <meta property="og:site_name" content="blog">
-<meta property="og:description" content="Abel’s lemma： $$\begin{aligned}\sum_{k&#x3D;1}^n a_k b_k &amp;&#x3D; a_1 b_1 + \sum_{k&#x3D;2}^n a_k b_k \&amp;&#x3D; a_1 B_1 + \sum_{k&#x3D;2}^n a_k (B_k - B_{k-1}) \&amp;&#x3D; a_1 B_1 + \sum_{k&amp;#x3">
+<meta property="og:description" content="Abel’s lemma  \begin{aligned} \sum_{k&#x3D;1}^n a_k b_k &amp;&#x3D; a_1 b_1 + \sum_{k&#x3D;2}^n a_k b_k \\ &amp;&#x3D; a_1 B_1 + \sum_{k&#x3D;2}^n a_k (B_k - B_{k-1}) \\ &amp;&#x3D; a_1 B_1 + \sum_{k&#x3D;2}^n a_k B_k - \sum_{k&#x3D;2}^n a_k B_{k-1} \\">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-05-14T08:05:23.000Z">
-<meta property="article:modified_time" content="2024-06-03T09:53:00.664Z">
+<meta property="article:modified_time" content="2024-06-05T02:51:36.636Z">
 <meta property="article:author" content="katoty">
 <meta property="article:tag" content="Math">
 <meta name="twitter:card" content="summary">
@@ -169,7 +169,7 @@
       
         <time datetime="2024-05-14T08:05:23.000Z" class="dt-published" itemprop="datePublished">2024-05-14</time>
         
-        (Updated: <time datetime="2024-06-03T09:53:00.664Z" class="dt-updated" itemprop="dateModified">2024-06-03</time>)
+        (Updated: <time datetime="2024-06-05T02:51:36.636Z" class="dt-updated" itemprop="dateModified">2024-06-05</time>)
         
       
     </div>
@@ -189,9 +189,15 @@
   
 
   <div class="content e-content" itemprop="articleBody">
-    <p>Abel’s lemma：</p>
-<p>$$<br>\begin{aligned}<br>\sum_{k&#x3D;1}^n a_k b_k &amp;&#x3D; a_1 b_1 + \sum_{k&#x3D;2}^n a_k b_k \<br>&amp;&#x3D; a_1 B_1 + \sum_{k&#x3D;2}^n a_k (B_k - B_{k-1}) \<br>&amp;&#x3D; a_1 B_1 + \sum_{k&#x3D;2}^n a_k B_k - \sum_{k&#x3D;2}^n a_k B_{k-1} \<br>&amp;&#x3D; \sum_{k&#x3D;1}^{n-1} a_k B_k + a_n B_n - \sum_{k&#x3D;1}^{n-1} a_{k+1} B_k \<br>&amp;&#x3D; \sum_{k&#x3D;1}^{n-1} (a_k - a_{k+1}) B_k + a_n B_n<br>\end{aligned}<br>$$</p>
-
+    <p>Abel’s lemma</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\sum_{k=1}^n a_k b_k &= a_1 b_1 + \sum_{k=2}^n a_k b_k \\
+&= a_1 B_1 + \sum_{k=2}^n a_k (B_k - B_{k-1}) \\
+&= a_1 B_1 + \sum_{k=2}^n a_k B_k - \sum_{k=2}^n a_k B_{k-1} \\
+&= \sum_{k=1}^{n-1} a_k B_k + a_n B_n - \sum_{k=1}^{n-1} a_{k+1} B_k \\
+&= \sum_{k=1}^{n-1} (a_k - a_{k+1}) B_k + a_n B_n
+\end{aligned}</script>
   </div>
 </article>
 
