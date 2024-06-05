@@ -27,26 +27,7 @@
       <link href="/2024/05/14/Notes/"/>
       <url>/2024/05/14/Notes/</url>
       
-        <content type="html"><![CDATA[<p>Abel’s lemma</p><script type="math/tex; mode=display">\begin{aligned}\sum_{k=1}^n a_k b_k &= a_1 b_1 + \sum_{k=2}^n a_k b_k \\&= a_1 B_1 + \sum_{k=2}^n a_k (B_k - B_{k-1}) \\&= a_1 B_1 + \sum_{k=2}^n a_k B_k - \sum_{k=2}^n a_k B_{k-1} \\&= \sum_{k=1}^{n-1} a_k B_k + a_n B_n - \sum_{k=1}^{n-1} a_{k+1} B_k \\&= \sum_{k=1}^{n-1} (a_k - a_{k+1}) B_k + a_n B_n\end{aligned}</script>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Math </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>摄动法</title>
-      <link href="/2024/04/07/%E6%91%84%E5%8A%A8%E6%B3%95/"/>
-      <url>/2024/04/07/%E6%91%84%E5%8A%A8%E6%B3%95/</url>
-      
-        <content type="html"><![CDATA[<h1 id="摄动法"><a href="#摄动法" class="headerlink" title="摄动法"></a>摄动法</h1><p>概述：对于任意 $n$ 阶矩阵 $A$ ，经过微小的一维摄动后，$tI_n+A$总能成为一个非异阵。</p><p>命题：对于任意$n$阶矩阵$A$。求证：存在一个正数$a$，使得任意$0&lt;t&lt;a,tI_n+A$都是非异阵。</p><p>证明：$\vert tI_n+A\vert = t^n+a_1t^{n-1}+\cdots +a_{n-1}t+a_n,$上述多项式至多只有$n$个不同根，若根都为$0$不妨取$a=1$；</p><p>若上述多项式有非零根，令$a$为其所有非零根的模长的最小值,此时任意$0&lt;t_0&lt;a$，$t_0$ 都不是$\vert tI_n+A\vert$ 的根，即$\vert t_0I_n+A\vert \ne 0$ ,即 <script type="math/tex">\vert t_0I_n+A\vert</script> 为非异阵。</p>]]></content>
+        <content type="html"><![CDATA[<p>Abel's lemma</p><p><span class="math display">\[\begin{aligned}\sum_{k=1}^n a_k b_k &amp;= a_1 b_1 + \sum_{k=2}^n a_k b_k \\&amp;= a_1 B_1 + \sum_{k=2}^n a_k (B_k - B_{k-1}) \\&amp;= a_1 B_1 + \sum_{k=2}^n a_k B_k - \sum_{k=2}^n a_k B_{k-1} \\&amp;= \sum_{k=1}^{n-1} a_k B_k + a_n B_n - \sum_{k=1}^{n-1} a_{k+1} B_k\\&amp;= \sum_{k=1}^{n-1} (a_k - a_{k+1}) B_k + a_n B_n\end{aligned}\]</span></p>]]></content>
       
       
       
@@ -65,7 +46,7 @@
       <link href="/2024/04/04/hello-world/"/>
       <url>/2024/04/04/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-wrap" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-wrap" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-wrap" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-wrap" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your veryfirst post. Check <a href="https://hexo.io/docs/">documentation</a> formore info. If you get any problems when using Hexo, you can find theanswer in <ahref="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> oryou can ask me on <ahref="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start">Quick Start</h2><h3 id="create-a-new-post">Create a new post</h3><div class="highlight-wrap" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div><p>More info: <ahref="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server">Run server</h3><div class="highlight-wrap" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files">Generate static files</h3><div class="highlight-wrap" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div><p>More info: <ahref="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites">Deploy to remote sites</h3><div class="highlight-wrap" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div><p>More info: <ahref="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
       
