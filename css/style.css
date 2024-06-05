@@ -446,6 +446,10 @@ body td {
   font-style: normal;
   font-family: "Roboto";
   src: local("Roboto"), url("../lib/Roboto/Robotoe-Regular-14.ttf") format("truetype");
+  font-style: normal;
+  font-family: "Fira Code";
+  src: local("Fira Code"), url("../lib/Fira Code/FiraCode-Regular.ttf") format("truetype");
+  @font-face;
   @font-face;
 }
 *,
