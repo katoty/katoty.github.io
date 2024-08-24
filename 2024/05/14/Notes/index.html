@@ -108,14 +108,14 @@
         <header>
     <nav class="navbar">
         <div class="container">
-            <div class="navbar-header header-logo"><a href="/">Leanty&#39;s Blog</a></div>
+            <div class="navbar-header header-logo"><a href="/">博客</a></div>
             <div class="menu navbar-right">
                 
-                    <a class="menu-item" href="/archives">Posts</a>
+                    <a class="menu-item" href="/archives">文章</a>
                 
-                    <a class="menu-item" href="/tags">Tags</a>
+                    <a class="menu-item" href="/tags">标签</a>
                 
-                    <a class="menu-item" href="/about">About</a>
+                    <a class="menu-item" href="/about">关于</a>
                 
                 <input id="switch_default" type="checkbox" class="switch_default">
                 <label for="switch_default" class="toggleBtn"></label>
@@ -128,17 +128,17 @@
         <div class="container">
             <div class="navbar-header">
                 <div>
-                    <a href="/">Leanty&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                    <a href="/">博客</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
                 </div>
                 <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
             </div>
             <div class="menu" id="mobile-menu">
                 
-                    <a class="menu-item" href="/archives">Posts</a>
+                    <a class="menu-item" href="/archives">文章</a>
                 
-                    <a class="menu-item" href="/tags">Tags</a>
+                    <a class="menu-item" href="/tags">标签</a>
                 
-                    <a class="menu-item" href="/about">About</a>
+                    <a class="menu-item" href="/about">关于</a>
                 
             </div>
         </div>
@@ -184,15 +184,18 @@
         </header>
 
         <div class="post-content">
-            <p>Abel’s lemma</p>
-<script type="math/tex; mode=display">
+            <p>Abel's lemma</p>
+<p><span class="math display">\[
 \begin{aligned}
-\sum_{k=1}^n a_k b_k &= a_1 b_1 + \sum_{k=2}^n a_k b_k \\
-&= a_1 B_1 + \sum_{k=2}^n a_k (B_k - B_{k-1}) \\
-&= a_1 B_1 + \sum_{k=2}^n a_k B_k - \sum_{k=2}^n a_k B_{k-1} \\
-&= \sum_{k=1}^{n-1} a_k B_k + a_n B_n - \sum_{k=1}^{n-1} a_{k+1} B_k \\
-&= \sum_{k=1}^{n-1} (a_k - a_{k+1}) B_k + a_n B_n
-\end{aligned}</script>
+\sum_{k=1}^n a_k b_k &amp;= a_1 b_1 + \sum_{k=2}^n a_k b_k \\
+&amp;= a_1 B_1 + \sum_{k=2}^n a_k (B_k - B_{k-1}) \\
+&amp;= a_1 B_1 + \sum_{k=2}^n a_k B_k - \sum_{k=2}^n a_k B_{k-1} \\
+&amp;= \sum_{k=1}^{n-1} a_k B_k + a_n B_n - \sum_{k=1}^{n-1} a_{k+1} B_k
+\\
+&amp;= \sum_{k=1}^{n-1} (a_k - a_{k+1}) B_k + a_n B_n
+\end{aligned}
+\]</span></p>
+
         </div>
 
         
