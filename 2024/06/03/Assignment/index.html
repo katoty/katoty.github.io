@@ -259,13 +259,13 @@ Recognition Using SVM</a></p>
         
         <section class="post-tags">
             <div>
-                <span>🔖标签:</span>
+                <!-- <span>🔖标签:</span> -->
                 <span class="tag">
                     
                     
-                        <a href="/tags/Machine-Learning/"> Machine Learning</a>
+                        <a href="/tags/Machine-Learning/"> 🔖Machine Learning</a>
                     
-                        <a href="/tags/PDE/"> PDE</a>
+                        <a href="/tags/PDE/"> 🔖PDE</a>
                     
                         
                 </span>
@@ -287,6 +287,49 @@ Recognition Using SVM</a></p>
     </article>
 </div>
 
+
+  
+    <div id="gitalk-container"></div>  
+    <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+
+<script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<script src="//cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script type="text/javascript">
+
+ var gitalk = new Gitalk({
+
+ clientID: 'Ov23liddKHvDleRytz03',
+
+ clientSecret: 'a41d78ad15144e82976c831beadda2276ddd7c4d',
+
+ repo: 'katoty.github.io',
+
+ owner: 'katoty',
+
+ admin: 'katoty',
+
+ id: md5(location.pathname), 
+
+ labels: 'Gitalk'.split(',').filter(l => l),
+
+ perPage: 10,
+
+ pagerDirection: 'last',
+
+ createIssueManually: true,
+
+ distractionFreeMode: false
+
+ })
+
+ gitalk.render('gitalk-container')
+
+</script>  
+   
             </div>
             <footer id="footer" class="footer">
 
