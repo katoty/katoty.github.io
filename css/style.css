@@ -504,6 +504,24 @@ input[type="radio"]:not(:checked) + label:after {
 }
 
 
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1724644899202') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gmail:before {
+  content: "\e61d";
+}
+
+
 .header-logo a {
   padding: 0;
 }
@@ -998,8 +1016,8 @@ header label {
 .post-content pre {
   line-height: 1.7em;
   padding: 7px;
-  font-size: 13px;
-  font-family: Consolas, Monaco, Menlo, Consolas, monospace;
+  font-size: 15px;
+  font-family: FiraCode, Monaco, Consolas, Menlo, Consolas, monospace;
 }
 .post-content code {
   line-height: 1.7em;
@@ -1310,68 +1328,75 @@ header label {
   }
 }
 .highlight {
-  background: #282b2e;
-  color: #e0e2e4;
+  color: #000;
+  background: #fff;
 }
-.highlight .code .keyword,
-.highlight .code .selector-tag,
-.highlight .code .literal,
-.highlight .code .selector-id {
-  color: #93c763;
-}
-.highlight .code .number {
-  color: #ffcd22;
-}
-.highlight .code .attribute {
-  color: #668bb0;
-}
-.highlight .code .code,
-.highlight .code .class .title,
-.highlight .code .section {
-  color: #fff;
-}
-.highlight .code .regexp,
-.highlight .code .link {
-  color: #d39745;
-}
-.highlight .code .meta {
-  color: #557182;
-}
-.highlight .code .tag,
-.highlight .code .name,
-.highlight .code .bullet,
 .highlight .code .subst,
-.highlight .code .emphasis,
-.highlight .code .type,
-.highlight .code .built_in,
-.highlight .code .selector-attr,
-.highlight .code .selector-pseudo,
-.highlight .code .addition,
-.highlight .code .variable,
-.highlight .code .template-tag,
-.highlight .code .template-variable {
-  color: #8cbbad;
-}
-.highlight .code .string,
-.highlight .code .symbol {
-  color: #ec7600;
+.highlight .code .title {
+  font-weight: normal;
+  color: #000;
 }
 .highlight .code .comment,
-.highlight .code .quote,
-.highlight .code .deletion {
-  color: #818e96;
+.highlight .code .quote {
+  color: #808080;
+  font-style: italic;
 }
-.highlight .code .selector-class {
-  color: #a082bd;
+.highlight .code .meta {
+  color: #808000;
 }
+.highlight .code .tag {
+  background: #efefef;
+}
+.highlight .code .section,
+.highlight .code .name,
+.highlight .code .literal,
 .highlight .code .keyword,
 .highlight .code .selector-tag,
-.highlight .code .literal,
-.highlight .code .doctag,
-.highlight .code .title,
-.highlight .code .section,
 .highlight .code .type,
-.highlight .code .name,
+.highlight .code .selector-id,
+.highlight .code .selector-class {
+  font-weight: bold;
+  color: #000080;
+}
+.highlight .code .attribute,
+.highlight .code .number,
+.highlight .code .regexp,
+.highlight .code .link {
+  font-weight: bold;
+  color: #00f;
+}
+.highlight .code .number,
+.highlight .code .regexp,
+.highlight .code .link {
+  font-weight: normal;
+}
+.highlight .code .string {
+  color: #008000;
+  font-weight: bold;
+}
+.highlight .code .symbol,
+.highlight .code .bullet,
+.highlight .code .formula {
+  color: #000;
+  background: #d0eded;
+  font-style: italic;
+}
+.highlight .code .doctag {
+  text-decoration: underline;
+}
+.highlight .code .variable,
+.highlight .code .template-variable {
+  color: #660e7a;
+}
+.highlight .code .addition {
+  background: #baeeba;
+}
+.highlight .code .deletion {
+  background: #ffc8bd;
+}
+.highlight .code .emphasis {
+  font-style: italic;
+}
 .highlight .code .strong {
   font-weight: bold;
 }
