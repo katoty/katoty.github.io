@@ -293,6 +293,63 @@
 </div>
 
 
+
+
+
+
+<script src="../../source/js/clipboard.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var codeBlocks = document.querySelectorAll('article pre code');
+
+        codeBlocks.forEach(function (codeBlock) {
+            var copyButton = document.createElement('button');
+            copyButton.className = 'copy-button';
+            copyButton.innerText = 'Copy';
+
+            // Check if the code block is in the article content
+            if (codeBlock.closest('article')) {
+                codeBlock.parentNode.style.position = 'relative';
+                codeBlock.parentNode.appendChild(copyButton); // 将按钮添加到 codeBlock 的父节点内
+
+                var isCopying = false;
+
+                copyButton.addEventListener('click', function () {
+                    if (!isCopying) {
+                        var codeText = codeBlock.innerText;
+                        navigator.clipboard.writeText(codeText).then(function () {
+                            copyButton.innerText = 'Copied!';
+                            isCopying = true;
+                            setTimeout(function () {
+                                copyButton.innerText = 'Copy';
+                                isCopying = false;
+                            }, 1500);
+                        }).catch(function (err) {
+                            console.error('Copy failed', err);
+                        });
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+<style>
+    .copy-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #2d96bd;
+        color: #fff;
+        border: none;
+        border-radius: 10%;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+</style>
+
+
+
   
     <div id="gitalk-container"></div>  
     <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
@@ -335,12 +392,14 @@
 
 </script>  
    
+
+
             </div>
             <footer id="footer" class="footer">
 
     <div class="copyright">
    
-    <span>© leanty | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a>
+    <span>© leanty | 由 <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic驱动</a>
    
     |
    
@@ -382,7 +441,6 @@
    
    </footer>
 
-   <!-- Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic -->
     </div>
 </body>
 
