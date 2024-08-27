@@ -278,70 +278,16 @@ Recognition Using SVM</a></p>
         </section>
         <section class="post-nav">
             
+                <a class="prev" rel="prev" href="/2024/08/27/%E6%95%B0%E7%8B%AC%E7%A8%8B%E5%BA%8F/">数独程序</a>
+            
             
             <a class="next" rel="next" href="/2024/05/14/Notes/">笔记</a>
             
         </section>
-
-
     </article>
 </div>
 
 
-
-
-
-
-<script src="../../source/js/clipboard.min.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var codeBlocks = document.querySelectorAll('article pre code');
-
-        codeBlocks.forEach(function (codeBlock) {
-            var copyButton = document.createElement('button');
-            copyButton.className = 'copy-button';
-            copyButton.innerText = 'Copy';
-
-            // Check if the code block is in the article content
-            if (codeBlock.closest('article')) {
-                codeBlock.parentNode.style.position = 'relative';
-                codeBlock.parentNode.appendChild(copyButton); // 将按钮添加到 codeBlock 的父节点内
-
-                var isCopying = false;
-
-                copyButton.addEventListener('click', function () {
-                    if (!isCopying) {
-                        var codeText = codeBlock.innerText;
-                        navigator.clipboard.writeText(codeText).then(function () {
-                            copyButton.innerText = 'Copied!';
-                            isCopying = true;
-                            setTimeout(function () {
-                                copyButton.innerText = 'Copy';
-                                isCopying = false;
-                            }, 1500);
-                        }).catch(function (err) {
-                            console.error('Copy failed', err);
-                        });
-                    }
-                });
-            }
-        });
-    });
-</script>
-
-<style>
-    .copy-button {
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: #2d96bd;
-        color: #fff;
-        border: none;
-        border-radius: 10%;
-        padding: 5px 10px;
-        cursor: pointer;
-    }
-</style>
 
 
 
@@ -388,7 +334,57 @@ Recognition Using SVM</a></p>
 </script>  
    
 
-
+   <script src="../source/js/clipboard.min.js"></script>
+   <script>
+       document.addEventListener('DOMContentLoaded', function () {
+           var codeBlocks = document.querySelectorAll('article pre code');
+   
+           codeBlocks.forEach(function (codeBlock) {
+               var copyButton = document.createElement('button');
+               copyButton.className = 'copy-button';
+               copyButton.innerText = 'Copy';
+   
+               // Check if the code block is in the article content
+               if (codeBlock.closest('article')) {
+                   codeBlock.parentNode.style.position = 'relative';
+                   codeBlock.parentNode.appendChild(copyButton); // 将按钮添加到 codeBlock 的父节点内
+   
+                   var isCopying = false;
+   
+                   copyButton.addEventListener('click', function () {
+                       if (!isCopying) {
+                           var codeText = codeBlock.innerText;
+                           navigator.clipboard.writeText(codeText).then(function () {
+                               copyButton.innerText = 'Copied!';
+                               isCopying = true;
+                               setTimeout(function () {
+                                   copyButton.innerText = 'Copy';
+                                   isCopying = false;
+                               }, 1500);
+                           }).catch(function (err) {
+                               console.error('Copy failed', err);
+                           });
+                       }
+                   });
+               }
+           });
+       });
+   </script>
+   
+   <style>
+       .copy-button {
+           position: absolute;
+           top: 0;
+           right: 0;
+           background-color: #2d96bd;
+           color: #fff;
+           border: none;
+           border-radius: 10%;
+           padding: 5px 10px;
+           cursor: pointer;
+       }
+   </style>
+   
             </div>
             <footer id="footer" class="footer">
 
