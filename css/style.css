@@ -167,7 +167,7 @@ template {
   font-display: swap;
 }
 html {
-  font-family: 'FiraCode', 'Microsoft Jhenghei', Lantinghei SC, 'lanting', PingFang SC, Seguo UI, Microsoft Yahei, Arial;
+  font-family: 'Microsoft Jhenghei', Lantinghei SC, 'lanting', PingFang SC, Seguo UI, Microsoft Yahei, Arial;
 }
 html::-webkit-scrollbar {
   width: 8px;
@@ -1017,7 +1017,7 @@ header label {
   line-height: 1.7em;
   padding: 7px;
   font-size: 15px;
-  font-family: FiraCode, Monaco, Consolas, Menlo, Consolas, monospace;
+  font-family: Monaco, Consolas, Menlo, Consolas, monospace;
 }
 .post-content code {
   line-height: 1.7em;

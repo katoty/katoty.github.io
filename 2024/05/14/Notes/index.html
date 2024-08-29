@@ -191,7 +191,7 @@
                         
                         📑字数: 
                         
-                        <a href="">78</a> 
+                        <a href="">3</a> 
                         
                         </span>
                         
@@ -218,18 +218,15 @@
         </header>
 
         <div class="post-content">
-            <p>Abel's lemma</p>
-<p><span class="math display">\[
+            <p>Abel’s lemma</p>
+<script type="math/tex; mode=display">
 \begin{aligned}
-\sum_{k=1}^n a_k b_k &amp;= a_1 b_1 + \sum_{k=2}^n a_k b_k \\
-&amp;= a_1 B_1 + \sum_{k=2}^n a_k (B_k - B_{k-1}) \\
-&amp;= a_1 B_1 + \sum_{k=2}^n a_k B_k - \sum_{k=2}^n a_k B_{k-1} \\
-&amp;= \sum_{k=1}^{n-1} a_k B_k + a_n B_n - \sum_{k=1}^{n-1} a_{k+1} B_k
-\\
-&amp;= \sum_{k=1}^{n-1} (a_k - a_{k+1}) B_k + a_n B_n
-\end{aligned}
-\]</span></p>
-
+\sum_{k=1}^n a_k b_k &= a_1 b_1 + \sum_{k=2}^n a_k b_k \\
+&= a_1 B_1 + \sum_{k=2}^n a_k (B_k - B_{k-1}) \\
+&= a_1 B_1 + \sum_{k=2}^n a_k B_k - \sum_{k=2}^n a_k B_{k-1} \\
+&= \sum_{k=1}^{n-1} a_k B_k + a_n B_n - \sum_{k=1}^{n-1} a_{k+1} B_k \\
+&= \sum_{k=1}^{n-1} (a_k - a_{k+1}) B_k + a_n B_n
+\end{aligned}</script>
         </div>
 
         
@@ -291,6 +288,58 @@
 </div>
 
 
+<script src="../../source/js/clipboard.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var codeBlocks = document.querySelectorAll('article pre code');
+
+        codeBlocks.forEach(function (codeBlock) {
+            var copyButton = document.createElement('button');
+            copyButton.className = 'copy-button';
+            copyButton.innerText = 'Copy';
+
+            // Check if the code block is in the article content
+            if (codeBlock.closest('article')) {
+                codeBlock.parentNode.style.position = 'relative';
+                codeBlock.parentNode.appendChild(copyButton); // 将按钮添加到 codeBlock 的父节点内
+
+                var isCopying = false;
+
+                copyButton.addEventListener('click', function () {
+                    if (!isCopying) {
+                        var codeText = codeBlock.innerText;
+                        navigator.clipboard.writeText(codeText).then(function () {
+                            copyButton.innerText = 'Copied!';
+                            isCopying = true;
+                            setTimeout(function () {
+                                copyButton.innerText = 'Copy';
+                                isCopying = false;
+                            }, 1500);
+                        }).catch(function (err) {
+                            console.error('Copy failed', err);
+                        });
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+<style>
+    .copy-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #2d96bd;
+        color: #fff;
+        border: none;
+        border-radius: 10%;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+</style>
+
+
 
 
 
@@ -337,57 +386,7 @@
 </script>  
    
 
-   <script src="../source/js/clipboard.min.js"></script>
-   <script>
-       document.addEventListener('DOMContentLoaded', function () {
-           var codeBlocks = document.querySelectorAll('article pre code');
-   
-           codeBlocks.forEach(function (codeBlock) {
-               var copyButton = document.createElement('button');
-               copyButton.className = 'copy-button';
-               copyButton.innerText = 'Copy';
-   
-               // Check if the code block is in the article content
-               if (codeBlock.closest('article')) {
-                   codeBlock.parentNode.style.position = 'relative';
-                   codeBlock.parentNode.appendChild(copyButton); // 将按钮添加到 codeBlock 的父节点内
-   
-                   var isCopying = false;
-   
-                   copyButton.addEventListener('click', function () {
-                       if (!isCopying) {
-                           var codeText = codeBlock.innerText;
-                           navigator.clipboard.writeText(codeText).then(function () {
-                               copyButton.innerText = 'Copied!';
-                               isCopying = true;
-                               setTimeout(function () {
-                                   copyButton.innerText = 'Copy';
-                                   isCopying = false;
-                               }, 1500);
-                           }).catch(function (err) {
-                               console.error('Copy failed', err);
-                           });
-                       }
-                   });
-               }
-           });
-       });
-   </script>
-   
-   <style>
-       .copy-button {
-           position: absolute;
-           top: 0;
-           right: 0;
-           background-color: #2d96bd;
-           color: #fff;
-           border: none;
-           border-radius: 10%;
-           padding: 5px 10px;
-           cursor: pointer;
-       }
-   </style>
-   
+  
             </div>
             <footer id="footer" class="footer">
 
