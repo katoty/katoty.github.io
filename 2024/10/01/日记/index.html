@@ -13,7 +13,7 @@
 
 
 
-<title>数独程序 | blog</title>
+<title>diary | blog</title>
 
 
 
@@ -233,7 +233,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">数独程序</h1>
+            <h1 class="post-title">diary</h1>
             
                 <div class="post-meta">
                     
@@ -242,7 +242,7 @@
 
                     
                         <span class="post-time">
-                            📅日期: <a href="">August 27, 2024&nbsp;&nbsp;14:56:03</a>
+                            📅日期: <a href="">October 1, 2024&nbsp;&nbsp;10:13:21</a>
                         </span>
                     
 
@@ -256,7 +256,7 @@
                         
                         📑字数: 
                         
-                        <a href="">292</a> 
+                        <a href="">116</a> 
                         
                         </span>
                         
@@ -270,7 +270,7 @@
                         
                        ⏱️阅读时长:
                         
-                        <a href="">2min</a> 
+                        <a href="">1min</a> 
                         
                         </span>
 
@@ -283,9 +283,9 @@
         </header>
 
         <div class="post-content">
-            <h1 id="利用python解决数独问题">利用<code>Python</code>解决数独问题</h1>
-<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># sudoku_solver.py</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">is_valid</span>(<span class="params">board, row, col, num</span>):</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">9</span>):</span><br><span class="line">        <span class="keyword">if</span> board[row][i] == num <span class="keyword">or</span> board[i][col] == num:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line">    start_row, start_col = <span class="number">3</span> * (row // <span class="number">3</span>), <span class="number">3</span> * (col // <span class="number">3</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">3</span>):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">3</span>):</span><br><span class="line">            <span class="keyword">if</span> board[start_row + i][start_col + j] == num:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">solve_sudoku</span>(<span class="params">board</span>):</span><br><span class="line">    <span class="keyword">for</span> row <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">9</span>):</span><br><span class="line">        <span class="keyword">for</span> col <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">9</span>):</span><br><span class="line">            <span class="keyword">if</span> board[row][col] == <span class="number">0</span>:</span><br><span class="line">                <span class="keyword">for</span> num <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">10</span>):</span><br><span class="line">                    <span class="keyword">if</span> is_valid(board, row, col, num):</span><br><span class="line">                        board[row][col] = num</span><br><span class="line">                        <span class="keyword">if</span> solve_sudoku(board):</span><br><span class="line">                            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">                        board[row][col] = <span class="number">0</span></span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">print_board</span>(<span class="params">board</span>):</span><br><span class="line">    <span class="keyword">for</span> row <span class="keyword">in</span> board:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">" "</span>.join(<span class="built_in">str</span>(num) <span class="keyword">if</span> num != <span class="number">0</span> <span class="keyword">else</span> <span class="string">'.'</span> <span class="keyword">for</span> num <span class="keyword">in</span> row))</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">parse_input</span>():</span><br><span class="line">    board = []</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"请输入数独谜题，每行9个字符，空位用 '-' 表示:"</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">9</span>):</span><br><span class="line">        <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">            line = <span class="built_in">input</span>(<span class="string">f"第 <span class="subst">{i + <span class="number">1</span>}</span> 行: "</span>)</span><br><span class="line">            <span class="keyword">if</span> <span class="built_in">len</span>(line) == <span class="number">9</span> <span class="keyword">and</span> <span class="built_in">all</span>(c <span class="keyword">in</span> <span class="string">'123456789-'</span> <span class="keyword">for</span> c <span class="keyword">in</span> line):</span><br><span class="line">                board.append([<span class="built_in">int</span>(c) <span class="keyword">if</span> c != <span class="string">'-'</span> <span class="keyword">else</span> <span class="number">0</span> <span class="keyword">for</span> c <span class="keyword">in</span> line])</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">"输入不合法，请重新输入。"</span>)</span><br><span class="line">    <span class="keyword">return</span> board</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    board = parse_input()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> solve_sudoku(board):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"Sudoku solved successfully:"</span>)</span><br><span class="line">        print_board(board)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"No solution exists"</span>)</span><br></pre></td></tr></tbody></table></figure>
-<p>你可以通过<a target="_blank" rel="noopener" href="https://leanty.pythonanywhere.com/">这个链接</a>尝试其web版本。</p>
+            <h3 id="section">10.1 ☀</h3>
+<p>龙跃甲子，鸽翱晴空，凤舞九天。昔关河黍离，列强逐鹿；神州放眼，一鹤冲天。重振社稷，举中流誓，今看东方盛世还。黄河血，慨仁人志士，魂祭新篇。
+华夏意气峥嵘，傲五湖四海锦绣满。壮三山五岳，叠古风姿；九经三史，彰现华韵。豪客泼墨，贤士铺卷，放歌九州富丽妍。泰山脊，领风骚环宇，有谁堪比？</p>
 
         </div>
 
@@ -300,7 +300,7 @@
                 
                     <p class="copyright-item">
                         <span>🗺️当前这篇博文地址：</span>
-                        <span><a href="https://leanty.github.io/2024/08/27/%E6%95%B0%E7%8B%AC%E7%A8%8B%E5%BA%8F/">https://leanty.github.io/2024/08/27/%E6%95%B0%E7%8B%AC%E7%A8%8B%E5%BA%8F/</a></span>
+                        <span><a href="https://leanty.github.io/2024/10/01/%E6%97%A5%E8%AE%B0/">https://leanty.github.io/2024/10/01/%E6%97%A5%E8%AE%B0/</a></span>
                     </p>
                 
                 
@@ -324,10 +324,6 @@
                 <!-- <span>🔖标签:</span> -->
                 <span class="tag">
                     
-                    
-                        <a href="/tags/python/"> 🔖python</a>
-                    
-                        
                 </span>
             </div>
             <div>
@@ -338,10 +334,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2024/10/01/%E6%97%A5%E8%AE%B0/">diary</a>
             
-            
-            <a class="next" rel="next" href="/2024/06/03/Assignment/">pdf</a>
+            <a class="next" rel="next" href="/2024/08/27/%E6%95%B0%E7%8B%AC%E7%A8%8B%E5%BA%8F/">数独程序</a>
             
         </section>
 
